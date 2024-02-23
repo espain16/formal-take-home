@@ -2,32 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  box-sizing: border-box;
+  background: rgb(237,239,244);
+
+}
+.section-header {
+  font-size: 30px;
+  font-weight: 600;
+}
+.saved-h2{
+  margin-left: 60px;
+}
+.dashboard-container{
+margin-left: 60px;
+}
+.dashboard-item{
+  display: flex;
+  width:550px;
+  height: 250px;
+  border-radius: 20px;
+}
+.card-styles{
+  background-color: #F1F5F9;
+  width:520px;
+  height: 200px;
+  border-radius: 20px;
+  
+}
+.card-title{
+  color: #5B5C5D;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.card-description{
+  color: #A2A6A8;
+  font-size: 14px;
+  font-weight: 200;
+}
+/*info icon styling*/
+.info-details{
+  font-size: 10px;
+  font-weight: 100;
+  color: #A2ADBE;
+  padding-top: 88px;
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.visual-aid-card{
+  background-color: #FFFFFF;
+  height: 160px;
+  width: 295px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
+.visual-aid-card-header{
+  color: #5F5F5F;
+  font-weight: 300;
+}
+.visual-aid-card-description{
+  font-size: 10px;
+  font-weight: 100;
+  color: #A2ADBE;
+  margin-top: 10px
+}
+.image{
+  width: 600px;
+  height: 108px;
+}
+
+/* #4B6DF6 -data */
+/* #3118C8 -security */
+/* #707EE9 - tools */
